@@ -1,6 +1,8 @@
 <template>
   <div>
-    <button type="button" class="btn btn-primary" @click="increment">count is {{ count }}</button>
+    <button type="button" class="btn btn-primary" @click="increment">
+      count is {{ count }}
+    </button>
   </div>
 </template>
 
@@ -11,8 +13,7 @@ import counterStore from '@/stores/counter';
 export default {
   name: 'HelloWorld',
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     ...mapActions(counterStore, ['increment']),
@@ -23,5 +24,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
